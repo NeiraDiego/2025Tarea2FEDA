@@ -18,25 +18,20 @@ using namespace std;
 // ############## ANÁLISIS DEL PROBLEMA ##############
 /*
 * Descripción del problema:
-* Se inceratron involuntariamente los comandos de inicio de linea y 
-* de fin de linea indicados con los simbolos ] y [ respectivamente
-* la tarea es reordenar el texto de acuerdo y eliminar los caracteres
+* Se debe buscar el menor numero de caracteres que hacen una combinacion
+* que puede formar la palabra completa por repetición en cuestion
 *
 * Entrada:
-* Lineas de texto con los caracteres en cuestion para ser ordenados
-* termina la iteracion con el EOF (end-of-file)
+* - Una linea en la que se indica el numero de casos
+* - Las demas lineas son cadenas de caractéres que componen las palabras
 *
 * Salida:
-* La cantidad de lineas de texto pero ordenadas y sin los signos
+* - una linea por tipo que 
 *
 * Estructuras:
 * 
 * Funciones:
 *
-* Aproximación:
-* se tomaran las lineas y se procesarán hasta encontrar uno de los 
-* caracteres y entonces se cambiará el modo de incertar de al final
-* del arreglo al principio o vice-versa 
 */
 
 

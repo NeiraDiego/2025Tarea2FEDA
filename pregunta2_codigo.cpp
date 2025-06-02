@@ -2,7 +2,7 @@
 /*
  * Nombre completo: Diego Ignacio Neira Salgado
  * id usuario: 1702322
- * Autoría: propia con asistencia de chat-GPT para errores de sintaxis
+ * Autoría: codigo de chat-GPT
  * fuentes: https://chatgpt.com/
  * Análisis asintótico:
  * Forma en que se comento: 
@@ -11,22 +11,20 @@
  *  - lineas adicionales: correcciones de chat-GPT o de fuentes externas
  *  - bloque comentado después del código: análisis asintótico
 */
-#include <iostream>
-#include <fstream>
+#include <iostream>      // Para entrada/salida estándar
+#include <stack>         // Para usar la pila (stack)
+#include <vector>        // Para manejar los arreglos dinámicos
+
 
 using namespace std;
+
 // ############## ANÁLISIS DEL PROBLEMA ##############
 /*
 * Descripción del problema:
-* Se debe buscar el menor numero de caracteres que hacen una combinacion
-* que puede formar la palabra completa por repetición en cuestion
 *
 * Entrada:
-* - Una linea en la que se indica el numero de casos
-* - Las demas lineas son cadenas de caractéres que componen las palabras
 *
 * Salida:
-* - una linea por tipo que 
 *
 * Estructuras:
 * 
@@ -36,9 +34,52 @@ using namespace std;
 
 
 // ############## CODIGO ##############
-int main (int argc, char *argv[]) {
-  return 0;
+
+
+int main() {
+  // mientras tengamos mas lineas las sigue leyendo
+  // usa break para salir del loop
+  while (true) {
+    int n;
+    cin >> n;
+    if (n == 0) break;
+
+    while (true) {
+      vector<int> objetivo(n);
+      cin >> objetivo[0];
+      if (objetivo[0] == 0) break; // Fin del bloque
+
+      // Leer el resto de la permutación
+      for (int i = 1; i < n; ++i) {
+        cin >> objetivo[i];
+      }
+
+      stack<int> estacion;
+      int siguiente = 1;  // Vagón que entra desde A
+      int indice = 0;     // Índice en la secuencia objetivo
+
+      while (siguiente <= n) {
+        estacion.push(siguiente); // El vagón entra a la estación
+        // Intentar mover desde estación a B si coincide con lo deseado
+          while (!estacion.empty() && estacion.top() == objetivo[indice]) {
+            estacion.pop();
+            ++indice;
+          }
+          ++siguiente;
+        }
+
+      if (estacion.empty()) {
+        cout << "Yes\n";
+      } else {
+        cout << "No\n";
+      }
+    }
+      cout << '\n'; // Línea en blanco entre bloques
+    }
+
+    return 0;
 }
+
 
 
 
