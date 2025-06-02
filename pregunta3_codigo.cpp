@@ -12,9 +12,12 @@
  *  - bloque comentado después del código: análisis asintótico
 */
 #include <iostream>
-#include <fstream>
+#include <queue>
+#include <string>
+#include <sstream>
 
 using namespace std;
+
 // ############## ANÁLISIS DEL PROBLEMA ##############
 /*
 * Descripción del problema:
@@ -43,13 +46,6 @@ using namespace std;
 
 
 // ############## CODIGO ##############
-#include <iostream>
-#include <queue>
-#include <string>
-#include <sstream>
-
-using namespace std;
-
 // Estructura para almacenar una QUery
 struct Consulta {
     int tiempo;   // tiempo en que entrega el proximo resultado
