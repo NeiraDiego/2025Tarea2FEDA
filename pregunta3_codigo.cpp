@@ -52,8 +52,8 @@ using namespace std;
 
 // Estructura para almacenar una QUery
 struct Consulta {
-    int id;       // ID de la Query
     int tiempo;   // tiempo en que entrega el proximo resultado
+    int id;       // ID de la Query
     int periodo;  // Periodo fijo de entrega dado en el input
 
     // Definir la prioridad: primero por tiempo, luego por ID
