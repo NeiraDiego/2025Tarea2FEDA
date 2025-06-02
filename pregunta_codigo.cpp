@@ -14,18 +14,14 @@
 #include <iostream>
 #include <fstream>
 
+using namespace std;
 // ############## ANÁLISIS DEL PROBLEMA ##############
 /*
 * Descripción del problema:
-* Se debe buscar el menor numero de caracteres que hacen una combinacion
-* que puede formar la palabra completa por repetición en cuestion
 *
 * Entrada:
-* - Una linea en la que se indica el numero de casos
-* - Las demas lineas son cadenas de caractéres que componen las palabras
 *
 * Salida:
-* - una linea por tipo que 
 *
 * Estructuras:
 * 
@@ -36,35 +32,6 @@
 
 // ############## CODIGO ##############
 int main (int argc, char *argv[]) {
- /*  // lectura por linea  
-  string linea;
-  while (getline(cin, linea)){
-
-    cout << "Línea leída: "<< linea << endl;
-  }
-*/
-
-/*
-  // lectura de entero único por linea
-  int x;
-  while (cin >> x) {
-    cout << "Leí: " << x << endl;
-  }
-*/
-
-/*
-  // lectura a vector de enteros
-  vector<int> datos;
-  int x;
-  while (cin >> x) {
-    datos.push_back(x);
-  }
-
-  for(int d: datos) {
-    cout << d << endl;
-  }
-  return 0;
-*/ 
   return 0;
 }
 

@@ -14,52 +14,35 @@
 #include <iostream>
 #include <fstream>
 
+using namespace std;
 // ############## ANÁLISIS DEL PROBLEMA ##############
 /*
 * Descripción del problema:
+* Se realizan (por linea) una serie de Querys  que se repiten cada intervalo Period
+* dado un numero de registros K que serán aceptados se debe entregar cuales son los Querys (ID)
+* que si logran entrar
+* 
 *
 * Entrada:
+* por linea se aceptan Registro ID y tiempo de ejecucion
+* en la penúlitma linea ingresa el signo # para indicar el fin de registros
+* finalmente el numero de registros K a aceptar
 *
 * Salida:
+* Listado en orden de los ID de los Querys aceptadas
 *
 * Estructuras:
 * 
 * Funciones:
 *
+* Se puede recorrer el tiempo (hasta 3000) para hasta que se acepten los K Querys 
+* Las Querys se pueden almacenar en un vector que contenga:
+* - el ID, el tiempo individual de ejecucion, el tiempo de la próxima ejecucion
 */
 
 
 // ############## CODIGO ##############
 int main (int argc, char *argv[]) {
- /*  // lectura por linea  
-  string linea;
-  while (getline(cin, linea)){
-
-    cout << "Línea leída: "<< linea << endl;
-  }
-*/
-
-/*
-  // lectura de entero único por linea
-  int x;
-  while (cin >> x) {
-    cout << "Leí: " << x << endl;
-  }
-*/
-
-/*
-  // lectura a vector de enteros
-  vector<int> datos;
-  int x;
-  while (cin >> x) {
-    datos.push_back(x);
-  }
-
-  for(int d: datos) {
-    cout << d << endl;
-  }
-  return 0;
-*/ 
   return 0;
 }
 
