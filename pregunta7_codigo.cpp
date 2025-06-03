@@ -29,9 +29,6 @@ using namespace std;
 * Salida:
 * La cantidad de lineas de texto pero ordenadas y sin los signos
 *
-* Estructuras:
-* 
-* Funciones:
 *
 * Aproximación:
 * se tomaran las lineas y se procesarán hasta encontrar uno de los 
