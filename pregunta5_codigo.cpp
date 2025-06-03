@@ -2,7 +2,7 @@
 /*
  * Nombre completo: Diego Ignacio Neira Salgado
  * id usuario: 1702322
- * Autoría: propia con asistencia de chat-GPT
+ * Autoría: codigo asistido por chat-GPT, con comentarios y análisis propio
  * fuentes: https://chatgpt.com/
  * Forma en que se comento: 
  *  - primer bloque luego de las librerias: comprensión del problema.

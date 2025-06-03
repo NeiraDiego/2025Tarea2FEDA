@@ -34,10 +34,6 @@ using namespace std;
 * Salida:
 * Listado en orden de los ID de los Querys aceptadas
 *
-* Estructuras:
-* 
-* Funciones:
-*
 * Se puede recorrer el tiempo (hasta 3000) para hasta que se acepten los K Querys 
 * Las Querys se pueden almacenar en un struct que contenga:
 * - el ID, el tiempo individual de ejecucion, el tiempo de la próxima ejecucion que

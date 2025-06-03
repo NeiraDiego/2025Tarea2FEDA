@@ -21,14 +21,25 @@ using namespace std;
 // ############## ANÁLISIS DEL PROBLEMA ##############
 /*
 * Descripción del problema:
+* Tenemos una llegada secuencial por A de vagones 1,2,...,n
+* y se nos especifica en que orden queremos que salgan por 
+* el lado B, para la cual tenemos dos opciones, dejarlos seguir
+* o stackearlos en una estacion y devolverlos en orden inverso,
+* con esto debemos determinar si es posible conseguir el orden 
+* pedido en el enunciado
 *
 * Entrada:
+* se entrega para un primer caso una primera linea con el número 
+* de vagones que van a llegar y luego otras lineas con el orden
+* desado de salida en B, se señaliza con 0 (no existe vagon 0)
+* el final del caso y luego puede comenzar otro o puede entregarse
+* otro 0 que señaliza el final de la ejecución
 *
 * Salida:
-*
-* Estructuras:
-* 
-* Funciones:
+* se busca una linea para cada combinacion deseada que indique:
+* Yes si es posible conseguirla o No si no se puede, y cada
+* caso debe estar separada por una linea en blanco (o sea, salto
+* de linea adicional)
 *
 */
 

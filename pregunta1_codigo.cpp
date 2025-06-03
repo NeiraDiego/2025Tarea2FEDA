@@ -42,10 +42,6 @@ using namespace std;
 * una lista de los concursantes ordenados con si ID el numero
 * de respuestas correctas y el tiempo de penalizacion
 *
-* Estructuras:
-* 
-* Funciones:
-*
 * Aproximación:
 * Voy a crear una estructura para cada concursante
 * (originalmente era un vector pero lo cambie por convenienvia)

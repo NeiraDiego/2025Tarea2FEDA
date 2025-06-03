@@ -2,7 +2,7 @@
 /*
  * Nombre completo: Diego Ignacio Neira Salgado
  * id usuario: 1702322
- * Autoría: propia con asistencia de chat-GPT para errores de sintaxis
+ * Autoría: propia con asistencia de chat-GPT
  * fuentes: https://chatgpt.com/
  * Análisis asintótico:
  * Forma en que se comento: 
